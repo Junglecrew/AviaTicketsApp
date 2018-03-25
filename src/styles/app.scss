@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import './media.scss';
+@import './preloader.scss';
+@import './fontawesome-all.min.scss';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.flightsList-enter {
+	opacity: 0.01;
+}
+
+.flightsList-enter.flightsList-enter-active {
+	opacity: 1;
+	transition: opacity 500ms ease-in;
+}
+
+.flightsList-appear {
+	opacity: 0.01;
+}
+
+.flightsList-appear.flightsList-appear-active {
+	opacity: 1;
+	transition: opacity 1000ms ease-in;
+}
+
+.flightsList-leave {
+	opacity: 1;
+}
+
+.flightsList-leave.flightsList-leave-active {
+	opacity: 0.01;
+	transition: opacity 300ms ease-in;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #F3F7FA;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main-title {
+  margin-top: 100px;
+}
+
+.main-content {
+  display: flex;
+  width: 1700px;
+  max-width: 70%;
+  margin: 100px auto;
+
+}
+
+.ticket {
+  background-color: #fff;
+  height: 250px;
+  display: flex;
+  margin-bottom:40px;
+  -webkit-box-shadow: 13px 12px 19px -8px rgba(199,199,199,0.58);
+  -moz-box-shadow: 13px 12px 19px -8px rgba(199,199,199,0.58);
+  box-shadow: 13px 12px 19px -8px rgba(199,199,199,0.58);
+}
+
+.ticket-info {
+
+  border-right: 1px solid rgba(0, 0 , 0 , .1) ;
+  width: 33%;
+  &__logo {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 80%;
+    height: 40%;
+    background-image: url('../images/logo_aeroflot.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat
+  }
+  &__price {
+    height: 40%;
+    margin: 10px 0 ;
+    :hover {
+      background-color: #FF6D00;
+      transition: .5s;
+    }
+
+  }
+  &__buy {
+    background-color: orange;
+    transition: .5s;
+    border-radius: 2px;
+    outline: none;
+    border:none;
+    width: 80%;
+    height: 100%;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+}
+
+.ticket-info__price-inrub {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.ticket-details {
+  width: 66%;
+  margin: 10px auto;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.ticket-details-departure {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__time {
+    font-size: 30px;
+  }
+  &__date {
+    font-size: 12px;
+  }
+  &__origin-name {
+    font-weight: bold;
+  }
+}
+
+.ticket-details__stops {
+  font-size: 12px;
+}
+
+.ticket-details-arrival {
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__time {
+    font-size: 30px;
+  }
+  &__date {
+    font-size: 12px;
+  }
+  &__destination-name {
+    font-weight: bold;
+  }
+}
+
+.stops-filter {
+  margin-top: 20px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  &__item {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+}
+
+
+.Flights-list {
+  width: 70%;
+  max-width: 70%;
+}
+
+
+.sidebar__sort {
+  text-align: left;
+}
+
+.sidebar__form-sort {
+  margin-top: 10px;
+}
