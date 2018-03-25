@@ -59,6 +59,7 @@ class MainContent extends Component {
 		return (
 			<div>
 				<h1 className="main-title">Выберите подходящий билет</h1>
+				<i className="fas fa-ticket-alt fa-5x"></i>
 				<div className="main-content">
 					<div className="sidebar">
 						<SortList 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SortList extends React.Component {
+class SortList extends Component {
 
   render() {
 		const {handleSortChange} = this.props

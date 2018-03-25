@@ -16,14 +16,15 @@ class Filter extends Component {
 				{this.props.maxStops.map(stop => {
 					return (
 						<div className="stops-filter__item" key={stop}>
-							<label>
 								<input
 									type="checkbox"
 									name={stop}
 									value={stop}
 									onChange = {handleChange}
-								/> {stop} пересадка(и)
-							</label>
+									id = {stop}
+								/> 
+								<label for={stop} className="checkbox"><span></span>{stop} пересадка(и)	</label>
+											
 						</div>
 					)
 				})}

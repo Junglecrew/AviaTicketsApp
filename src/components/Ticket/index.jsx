@@ -14,7 +14,7 @@ class Ticket extends Component {
 					<div className="ticket-info__logo"></div>
 					<div className="ticket-info__price">
 						<a href="">
-							<button className="ticket-info__buy">Купить за <span className="ticket-info__price-inrub">{ticket.price} Р</span>
+							<button className="ticket-info__buy">Купить за <br/><span className="ticket-info__price-inrub">{ticket.price} Р</span>
 							</button>
 						</a>
 					</div>
